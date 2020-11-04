@@ -1,6 +1,14 @@
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+  docs: {
+    'Getting Started': ['installation'],
+    'CLI Reference': [{
+      'katan server': [
+        'cli/server/create',
+        'cli/server/info',
+        'cli/server/list',
+        'cli/server/start',
+        'cli/server/stop'
+      ]
+    }]
   },
 };
