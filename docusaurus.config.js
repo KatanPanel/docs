@@ -1,12 +1,12 @@
 module.exports = {
     title: 'Katan',
     tagline: 'Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.',
-    url: 'https://katanpanel.github.io',
+    url: 'https://katanpanel.github.io/docs',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'KatanPanel',
-    projectName: 'Katan',
+    projectName: 'docs',
     themeConfig: {
         navbar: {
             title: 'Katan',
