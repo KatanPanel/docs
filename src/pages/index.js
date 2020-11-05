@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Intuitive',
+    imageUrl: 'img/undraw_design.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          With a UI built and designed with the most modern currently, navigate fluidly and quickly between your servers and the control panel.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Security in mind',
+    imageUrl: 'img/undraw_fingerprint.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+          Katan focuses on the security of the identity of those using it, with cutting-edge encryption, we will take care of this for you.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Free & Open Source',
+    imageUrl: 'img/undraw_savings.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Katan is free and anyone can simply download, install and use, in addition to being open source, there is not much to say.
       </>
     ),
   },
@@ -59,22 +56,28 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      description="Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.">
+      <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
+            <div className="row">
+                <div className="col col--4">
+                    <img className="katan-logo" src="img/logo.png" alt="Katan Logo"/>
+                </div>
+                <div className="col col--8">
+                    <h1 className="hero__title">{siteConfig.title}</h1>
+                    <p className="hero__subtitle">A fast, simple and modularly adaptable game server panel.</p>
+                    <div className={styles.buttons}>
+                        <Link
+                            className={clsx(
+                                'button button--outline button--secondary button--lg',
+                                styles.getStarted,
+                            )}
+                            to={useBaseUrl('docs/')}>
+                            Get Started
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
       </header>
       <main>

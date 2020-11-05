@@ -4,9 +4,9 @@ title: katan server ls
 ---
 
 ## Description
-Stops a running server.
+Lists all registered servers.
 
 ## Usage
 ```console
-katan server ls [OPTIONS] SERVER NAME [COMMAND] [ARG...]
+katan server ls [OPTIONS] [COMMAND] [ARG...]
 ```

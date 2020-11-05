@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Katan',
-    tagline: 'Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.',
+    tagline: 'A fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.',
     url: 'https://katanpanel.github.io',
     baseUrl: '/docs/',
     onBrokenLinks: 'warn',
@@ -22,9 +22,9 @@ module.exports = {
                     position: 'right',
                 },
                 {
-                  to: 'blog',
-                  label: 'Blog',
-                  position: 'right'
+                    href: 'https://discord.gg/ey8dwsv',
+                    label: 'Community',
+                    position: 'right',
                 },
                 {
                     href: 'https://github.com/KatanPanel/Katan',
@@ -35,30 +35,6 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            links: [
-                {
-                    title: 'Community',
-                    items: [
-                        {
-                            label: 'Discord',
-                            href: 'https://discord.gg/ey8dwsv',
-                        }
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [
-                        {
-                            label: 'Blog',
-                            to: 'blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/KatanPanel/Katan',
-                        },
-                    ],
-                },
-            ],
             copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.`,
         },
     },
