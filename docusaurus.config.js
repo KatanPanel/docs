@@ -2,7 +2,7 @@ module.exports = {
     title: 'Katan',
     tagline: 'Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.',
     url: 'https://katanpanel.github.io',
-    baseUrl: '/docs/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'KatanPanel',
