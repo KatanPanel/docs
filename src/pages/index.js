@@ -57,7 +57,7 @@ function Home() {
   return (
     <Layout
       description="Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.">
-      <header className={clsx('hero', styles.heroBanner)}>
+      <header className={clsx('hero hero__katan', styles.heroBanner)}>
         <div className="container">
             <div className="row">
                 <div className="col col--4">
@@ -66,7 +66,7 @@ function Home() {
                 <div className="col col--8">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">A fast, simple and modularly adaptable game server panel.</p>
-                    <div className={styles.buttons}>
+                    <div className={clsx('buttons__katan', styles.buttons)}>
                         <Link
                             className={clsx(
                                 'button button--outline button--secondary button--lg',
