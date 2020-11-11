@@ -37,6 +37,10 @@ module.exports = {
             style: 'dark',
             copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.`,
         },
+        gtag: {
+            trackingID: 'G-5HFBSRG9BY',
+            anonymizeIP: true,
+        }
     },
     presets: [
         [
@@ -47,15 +51,11 @@ module.exports = {
                     editUrl:
                         'https://github.com/KatanPanel/docs/edit/main/',
                 },
-                blog: {
-                    showReadingTime: true,
-                    editUrl:
-                        'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
             },
         ],
     ],
+    plugins: ['@docusaurus/plugin-google-gtag']
 };
