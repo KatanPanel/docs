@@ -1,12 +1,12 @@
 module.exports = {
     title: 'Katan',
-    tagline: 'A fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers.',
+    tagline: 'An open source game server management panel.',
     url: 'https://katanpanel.github.io',
-    baseUrl: '/docs/',
+    baseUrl: '/katan-website/',
     onBrokenLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'KatanPanel',
-    projectName: 'docs',
+    projectName: 'katan-website',
     themeConfig: {
         navbar: {
             title: 'Katan',
@@ -27,7 +27,7 @@ module.exports = {
                     position: 'right',
                 },
                 {
-                    href: 'https://github.com/KatanPanel/Katan',
+                    href: 'https://github.com/KatanPanel',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -49,7 +49,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl:
-                        'https://github.com/KatanPanel/docs/edit/main/',
+                        'https://github.com/KatanPanel/katan-website/edit/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

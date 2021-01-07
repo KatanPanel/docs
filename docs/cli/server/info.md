@@ -4,7 +4,7 @@ title: katan server info
 ---
 
 ## Description
-Displays information about a server and its state.
+Displays information about a server.
 
 ## Usage
 ```console
