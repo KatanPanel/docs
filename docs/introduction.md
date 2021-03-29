@@ -4,6 +4,8 @@ title: Introduction
 slug: /
 ---
 
+Hello, you are in the Katan documentation! Here we will show you several useful things like the tutorial for installing all the packages available for Katan, creating plug-ins to make your panel powerful and many other cool things!
+
 :::caution Disclaimer
 This is a **very early and incomplete alpha release** of Katan. 
 We are keeping this available to create a community and get feedback.
@@ -41,6 +43,10 @@ Katan is the motivation to have something simple that a simple person can use an
 ## Supported Games
 Currently, there are not many games that we support so this is our current list of supported games:
 * Minecraft – all versions.
+
+### Other section
+
+Hehe
 
 ## Stay In Touch
 * [Github](https://github.com/KatanPanel)
