@@ -7,6 +7,18 @@ module.exports = {
     favicon: 'img/favicon.ico',
     organizationName: 'KatanPanel',
     projectName: 'katan-website',
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'pt-br'],
+        localeConfigs: {
+            en: {
+                label: 'English',
+            },
+            "pt-br": {
+                label: 'Português (Brasil)',
+            },
+        }
+    },
     themeConfig: {
         navbar: {
             title: 'Katan',
@@ -27,9 +39,14 @@ module.exports = {
                     position: 'right',
                 },
                 {
-                    href: 'https://github.com/KatanPanel',
-                    label: 'GitHub',
+                    type: 'localeDropdown',
                     position: 'right',
+                },
+                {
+                    href: 'https://github.com/KatanPanel',
+                    position: 'right',
+                    className: 'header-github-link',
+                    'aria-label': 'GitHub',
                 },
             ],
         },
