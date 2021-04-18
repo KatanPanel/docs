@@ -1,0 +1,31 @@
+{
+    "short_name": "Katan Website",
+    "name": "Katan Website",
+    "icons": [
+      {
+        "src": "/img/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#4b7bec",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#4b7bec",
+    "shortcuts": [
+      {
+        "name": "Katan docs.",
+        "short_name": "Documentation",
+        "description": "See the official Katan documentation",
+        "url": "/docs?source=pwa"
+      },
+      {
+        "name": "Katan community.",
+        "short_name": "Community",
+        "description": "Join the Katan community",
+        "url": "/community?source=pwa"
+      }
+    ],
+    "description": "Katan is a fast, simple and modularly adaptable panel built to manage game servers running isolated in Docker containers."
+  }
