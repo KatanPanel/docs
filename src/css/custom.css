@@ -88,6 +88,7 @@
 .table-of-contents, .table-of-contents ul {
   padding-left: 0;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .table-of-contents__link {
@@ -100,8 +101,14 @@
   margin-left: -2px;
 }
 
+[data-theme=dark] .table-of-contents__link {
+  color: #AAA;
+}
+
 .table-of-contents__link--active, .table-of-contents__link--active {
   border-left: 3px solid var(--ifm-color-primary);
+  color: var(--ifm-toc-link-color) !important;
+  font-weight: 600;
 }
 
 .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC- {
