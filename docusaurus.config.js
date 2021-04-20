@@ -1,3 +1,5 @@
+const communityUrl = "https://discord.gg/Tg7TTfT5ej"
+
 module.exports = {
   title: "Katan",
   tagline: "An open source game server management panel.",
@@ -7,6 +9,9 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "KatanPanel",
   projectName: "katan-website",
+  customFields: {
+    communityUrl
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en", "br"],
@@ -20,7 +25,9 @@ module.exports = {
     },
   },
   themeConfig: {
-    hideableSidebar: true,
+    colorMode: {
+      respectPrefersColorScheme: true
+    },
     navbar: {
       title: "Katan",
       logo: {
@@ -32,12 +39,12 @@ module.exports = {
           to: "docs/",
           activeBasePath: "docs",
           label: "Documentation",
-          position: "left",
+          position: "right",
         },
         {
-          href: "https://discord.gg/ey8dwsv",
+          href: communityUrl,
           label: "Community",
-          position: "left",
+          position: "right",
         },
         {
           type: "localeDropdown",
@@ -67,6 +74,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/KatanPanel/katan-website/edit/main/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -106,5 +115,5 @@ module.exports = {
         ],
       },
     ],
-  ],
+  ]
 };

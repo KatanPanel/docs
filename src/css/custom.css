@@ -18,6 +18,22 @@
   --ifm-color-warning: #f7b731;
 }
 
+[data-theme=dark] {
+  --ifm-heading-color: #FFF;
+}
+
+[data-theme=light] {
+  --ifm-heading-color: #414141;
+}
+
+[data-theme=dark] body {
+  color: #DDD;
+}
+
+[data-theme=light] body {
+  color: #565656;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -37,8 +53,9 @@
   font-weight: 500;
 }
 
-.menu__link.menu__link--sublist.menu__link--active {
-  color: var(--ifm-menu-color);
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(75, 123, 236, 0.12);
+  font-weight: 500;
 }
 
 .hero__katan {
@@ -68,11 +85,6 @@
 
 .buttons__katan {
   justify-content: flex-start !important;
-}
-
-.menu__link--active:not(.menu__link--sublist) {
-  background: initial;
-  font-weight: 500;
 }
 
 .table-of-contents li {

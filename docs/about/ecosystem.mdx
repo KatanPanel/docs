@@ -1,0 +1,57 @@
+---
+id: ecosystem
+title: Ecosystem
+sidebar_position: 3
+---
+
+import MaestroTerminology from "@site/static/img/maestro-terminology.png";
+
+Before starting to use the Katan we need to understand how it is built.
+
+Katan has several different applications containing modules that have synergy with each other.
+The main application is *Backend*, everyone else needs it to perform their proper functions.
+
+The other applications like UI are just **add-ons**.
+
+### Backend
+This is our server, this is where all the information is available, the *core*.
+We can call it *Backend*, it is responsible for handling
+of containers, accounts, positions and other things like plug-ins.
+
+It is the meeting point for all other applications.
+
+### CLI
+The CLI is an active *Backend* module that makes it possible to interact with the *Backend* through
+from a command line interface, typing `katan`.
+
+You can create servers, view statistics, create accounts and do many other things.
+If you are used to CLI you can use it so you don't need to install the *UI*.
+
+### Web-server
+While the *Backend* takes care of everything, the *web-server* takes this information and distributes 
+it to whoever asks for it, is an HTTP and WebSocket server that transmits data from the 
+*Backend* to other applications.
+
+You can choose not to link it with the *Backend* to save resources.
+
+### User Interface (UI) {#ui}
+It's that site you saw on the Home Page, the client, where everything is beautiful and everything
+works with the push of a button. It integrates directly with *Backend* and *Web-server*, we need
+both for the *UI* to get information.
+
+### Orchestrator
+*Maestro* for the most intimate, is the orchestrator of the Katan, with which he will be able
+to **scale** his servers, distribute them in different locations, but still keep them in sync.
+
+<center>
+    <img src={MaestroTerminology} style={{
+        textAlign: "center"
+    }} alt="Maestro Terminology" title="Maestro Terminology"/>
+</center>
+
+<br />
+
+It is thanks to him that you will not connect 100 servers on the same machine, ~~at least i hope
+not~~.
+If you are looking for **business-grade/hosting solutions**, this is the project you should keep an
+eye on.
