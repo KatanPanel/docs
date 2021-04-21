@@ -21,7 +21,7 @@ module.exports = {
         label: "English",
       },
       br: {
-        label: "Português (Brasil)",
+        label: "Português",
       },
     },
   },
@@ -52,11 +52,6 @@ module.exports = {
           href: communityUrl,
           label: "Community",
           position: "left",
-        },
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: true
         },
         {
           type: "localeDropdown",
