@@ -130,7 +130,7 @@
   background-color: var(--ifm-color-primary);
 }
 
-.heroBanner_src-pages- {
+.hero__katan {
   background-color: transparent;
   color: #FFF;
   position: relative;
@@ -139,20 +139,20 @@
   padding: 0 !important;
 }
 
-.heroBanner_src-pages- .hero-content {
+.hero__katan .hero-content {
   padding: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.heroBanner_src-pages- .hero__title {
+.hero__katan .hero__title {
   color: #FFF;
   margin-top: 3rem;
   margin-bottom: 0;
 }
 
-.heroBanner_src-pages- .hero__subtitle {
+.hero__katan .hero__subtitle {
   font-size: 1.2rem;
   opacity: 0.84;
 }
