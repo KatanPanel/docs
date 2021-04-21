@@ -11,6 +11,10 @@
     "message": "Comunidade",
     "description": "Navbar item with label Community"
   },
+  "item.label.Reference": {
+    "message": "Referência",
+    "description": "Navbar item with label Reference"
+  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"

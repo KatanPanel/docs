@@ -1,4 +1,5 @@
 const communityUrl = "https://discord.gg/Tg7TTfT5ej"
+const baseUrl = process.env.BASE_URL || '/';
 
 module.exports = {
   title: "Katan",
@@ -36,15 +37,26 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/",
-          activeBasePath: "docs",
+          type: "doc",
+          docId: "about/overview",
           label: "Documentation",
-          position: "right",
+          position: "left",
+        },
+        {
+          type: "doc",
+          docId: "reference/overview",
+          label: "Reference",
+          position: "left",
         },
         {
           href: communityUrl,
           label: "Community",
-          position: "right",
+          position: "left",
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true
         },
         {
           type: "localeDropdown",
@@ -54,13 +66,13 @@ module.exports = {
           href: "https://github.com/KatanPanel",
           position: "right",
           className: "header-github-link",
-          "aria-label": "GitHub",
+          "aria-label": "GitHub 33",
         },
       ],
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
     },
     gtag: {
       trackingID: "G-5HFBSRG9BY",
@@ -72,6 +84,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/KatanPanel/katan-website/edit/main/",
           showLastUpdateAuthor: true,
@@ -100,12 +113,12 @@ module.exports = {
           {
             tagName: "link",
             rel: "icon",
-            href: "/img/logo.png",
+            href: "img/logo.png",
           },
           {
             tagName: "link",
             rel: "manifest",
-            href: "/manifest.json",
+            href: `${baseUrl}manifest.json`,
           },
           {
             tagName: "meta",

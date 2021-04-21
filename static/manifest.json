@@ -1,6 +1,6 @@
 {
-  "short_name": "Katan Website",
   "name": "Katan Website",
+  "short_name": "Katan",
   "icons": [
     {
       "src": "/img/logo.png",
@@ -11,8 +11,14 @@
   "start_url": "/?source=pwa",
   "background_color": "#4b7bec",
   "display": "standalone",
-  "scope": "/",
+  "scope": "./",
   "theme_color": "#4b7bec",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://https://katanpanel.github.io/katan-website/manifest.json"
+    }
+  ],
   "shortcuts": [
     {
       "name": "Katan docs.",
