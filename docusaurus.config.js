@@ -26,6 +26,10 @@ module.exports = {
     },
   },
   themeConfig: {
+    prism: {
+      theme: require("prism-react-renderer/themes/nightOwlLight"),
+      darkTheme: require("prism-react-renderer/themes/palenight")
+    },
     colorMode: {
       respectPrefersColorScheme: true
     },
@@ -123,5 +127,6 @@ module.exports = {
         ],
       },
     ],
-  ]
+  ],
+  themes: ["@saucelabs/theme-github-codeblock"]
 };

@@ -1,10 +1,9 @@
 ---
 id: supported-games
-title: Supported Games
-sidebar_position: 2
+title: Integrated games support
+sidebar_position: 3
 ---
 
-## Integrated support
 Katan offers integrated support for several different games including sub-versions of servers, some
 of these games have special treatments coming from other projects such as the user interface.
 

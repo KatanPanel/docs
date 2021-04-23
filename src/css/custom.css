@@ -104,6 +104,12 @@
   color: #AAA;
 }
 
+.table-of-contents__link {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .table-of-contents__link--active, .table-of-contents__link--active {
   border-left: 3px solid var(--ifm-color-primary);
   color: var(--ifm-toc-link-color) !important;
@@ -155,4 +161,8 @@
 .hero__katan .hero__subtitle {
   font-size: 1.2rem;
   opacity: 0.84;
+}
+
+.admonition-heading h1, .admonition-heading h2, .admonition-heading h3, .admonition-heading h4, .admonition-heading h5, .admonition-heading h6 {
+  color: inherit;
 }
