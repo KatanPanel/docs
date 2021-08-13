@@ -71,7 +71,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Katan. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
     },
     gtag: {
       trackingID: "G-BWXYFCQYH2",
