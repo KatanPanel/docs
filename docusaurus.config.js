@@ -74,7 +74,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Katan, Inc. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
     },
     gtag: {
-      trackingID: "G-5HFBSRG9BY",
+      trackingID: "G-BWXYFCQYH2",
       anonymizeIP: true,
     },
   },
