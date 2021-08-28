@@ -4,7 +4,7 @@ const baseUrl = process.env.BASE_URL || '/';
 module.exports = {
   title: "Katan",
   tagline: "An open source game server management panel.",
-  url: "https://katanpanel.github.io",
+  url: "https://katan.org",
   baseUrl: "/",
   onBrokenLinks: "warn",
   favicon: "img/favicon.ico",
