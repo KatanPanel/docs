@@ -28,7 +28,8 @@ module.exports = {
   themeConfig: {
     prism: {
       theme: require("prism-react-renderer/themes/nightOwlLight"),
-      darkTheme: require("prism-react-renderer/themes/palenight")
+      darkTheme: require("prism-react-renderer/themes/palenight"),
+      additionalLanguages: ['powershell'],
     },
     colorMode: {
       respectPrefersColorScheme: true

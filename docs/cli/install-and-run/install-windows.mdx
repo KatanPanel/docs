@@ -1,0 +1,60 @@
+---
+id: install-windows
+title: Install Katan CLI on Windows
+sidebar_position: 3
+---
+
+Katan CLI has an executable made exclusively to run on Windows, to use it just download it and run it.
+
+The Windows executable that we all know `.exe` is available in the [Official Katan CLI repository](https://github.com/KatanPanel/katan-cli/releases) for anyone to download. You can change the version by changing the installation address to your preferred version.
+
+## Install with PowerShell
+Let's download the executable via PowerShell's `Invoke-WebRequest` or `curl` at the command prompt, choose whichever you prefer.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="powershell"
+  values={[
+    {label: 'PowerShell', value: 'powershell'},
+    {label: 'Windows Command Prompt', value: 'command-prompt'},
+]}>
+<TabItem value="powershell">
+
+```powershell
+Invoke-WebRequest "https://github.com/KatanPanel/katan-cli/releases/download/latest/katan-cli-mingwX64.exe" -Outfile katan.exe
+```
+
+#### Parameters
+* `-Outfile` changes the name of the executable file.
+
+</TabItem>
+<TabItem value="command-prompt">
+
+```shell
+curl -L -o katan.exe https://github.com/KatanPanel/katan-cli/releases/latest/main/katan-cli-mingwX64.exe
+```
+
+#### Parameters
+* `-o` changes the name of the executable file.
+* `-L` follow URL redirections.
+
+</TabItem>
+</Tabs>
+
+## Run the Katan CLI
+Now that installation is complete, you can finally enjoy all that Katan CLI has to offer. 
+Run the `katan version` command to see what version has been installed.
+
+```bash
+katan version
+```
+
+## Troubleshooting
+If you encounter a problem installing the CLI, report the issue in [Github issues](https://github.com/KatanPanel/katan-cli/issues) and we will help you.
+
+## Next steps
+Installation ok, everything worked as expected!? Perfect, now it's nice that you learn to use Katan CLI commands to manage your servers effectively.
+
+* Getting started with Katan CLI
