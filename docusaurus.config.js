@@ -78,6 +78,12 @@ module.exports = {
       trackingID: "G-BWXYFCQYH2",
       anonymizeIP: true,
     },
+    algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+      contextualSearch: true,
+      searchParameters: {},
+    }
   },
   presets: [
     [
