@@ -18,10 +18,10 @@ function Home() {
                     <img className="katan-logo" src="img/logo-white.png" alt="Katan Logo"/>
                 </div>
                 <div>
-                    <h1 className="hero__title">{siteConfig.title} Panel</h1>
+                    <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">
                         <Translate id="katan.home.heading.description">
-                            A modern, fast and open-source game server management panel.
+                        The homepage is under development.
                         </Translate>
                     </p>
                 </div>
