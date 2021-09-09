@@ -1,0 +1,96 @@
+---
+id: overview
+title: Overview
+slug: /
+sidebar_position: 1
+tags:
+  - katan
+  - about
+  - introduction
+  - documentation
+---
+
+Welcome to the Katan documentation.<br/>
+Here you can find the reference for all official projects associated with Katan.
+
+## What's Katan?
+Katan is a game server management panel built to run game servers in an isolated environment.
+It was created with the aim of facilitating the creation of game servers quickly and effectively.
+
+"Katan" originated from the combination of the first letter of the name of the [Kotlin programming language](https://kotlinlang.org/), which is the main language of the Katan ecosystem, and the last letters of its creator's name "Natan".
+
+## What can I use Katan for?
+#### Just play with some friends
+Katan is lightweight and fast. You there, you can quickly open a server whatever game you want to play with your friends, right on your computer.
+
+Don't worry, your computer won't die, you can trust me.
+
+#### Responsive scaling and deployment
+Katan's versatile nature enables highly portable workloads. Choose the orchestrator of your choice and simply upload tens of thousands of game servers without any worries.
+
+Katan's container-based platform also make it easy to dynamically manage workloads, scaling up or tearing down servers in real time.
+
+See more in the [Scaling Up](./scaling-up) section.
+
+#### Game server hosting as a service
+Katan is [MIT-licensed](#licensing) and free of restrictions regarding services, you can safely use it any way you want if you want to use for example the Web UI so that your customers have an interface to interact with your game servers.
+
+## Open source initiative
+Katan is completely free and open source. All of its official associated projects are also open source and we plan to keep that.
+
+We are immensely grateful to those who are already there and who are contributing to the growth and improvement of Katan.
+
+Anyone can contribute, if you want to become a contributor, check out our [other projects](./) and our [official repository on Github](https://github.com/KatanPanel).
+
+## Sponsoring
+Katan is a very huge project that has been in development for over two years and is growing every 
+day. It is difficult for us on the Katan developement team to maintain code base quality and support 
+for new users who want to use Katan every day.
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
+export const CommunityUrl = ({children}) => {
+    return <a href={useDocusaurusContext().siteConfig.customFields.communityUrl}>
+        {children}
+    </a>;
+};
+
+You can help in the following ways:
+* [Contributing to our projects](https://github.com/KatanPanel)
+* [Becoming a sponsor](https://github.com/sponsors/DevNatan)
+* <CommunityUrl>Helping the community</CommunityUrl>
+
+By doing this you will be ensuring that Katan stays alive every day.
+
+## Licensing
+Katan is licensed under the [MIT license](https://github.com/KatanPanel/Katan/blob/master/LICENSE).
+```
+MIT License
+
+Copyright (c) Natan Vieira (DevNatan)
+Copyright (c) contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Next Steps
+* Read about [installing Katan](./installation/docker).
+<li>
+    Join our <CommunityUrl>Discord Community</CommunityUrl>.
+</li>
