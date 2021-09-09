@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkatan_docs=self.webpackChunkkatan_docs||[]).push([[669],{1830:function(e){e.exports=JSON.parse('{"name":"Web UI","permalink":"/docs/tags/web-ui","docs":[{"id":"web-ui/introduction","title":"Introduction","description":"For non-CLI lovers, the UI has come to your rescue.","permalink":"/docs/web-ui/introduction"}],"allTagsPath":"/docs/tags"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkatan_docs=self.webpackChunkkatan_docs||[]).push([[122],{8457:function(t){t.exports=JSON.parse('{"name":"introduction","permalink":"/br/docs/tags/introduction","docs":[{"id":"overview","title":"Overview","description":"Welcome to the Katan documentation.","permalink":"/br/docs/"}],"allTagsPath":"/br/docs/tags"}')}}]);
