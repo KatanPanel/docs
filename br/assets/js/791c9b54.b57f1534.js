@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkatan_docs=self.webpackChunkkatan_docs||[]).push([[194],{1880:function(a){a.exports=JSON.parse('{"name":"documenta\xe7\xe3o","permalink":"/br/docs/tags/documentacao","docs":[{"id":"overview","title":"Vis\xe3o Geral","description":"Bem-vindo(a) \xe0 documenta\xe7\xe3o do Katan.","permalink":"/br/docs/"}],"allTagsPath":"/br/docs/tags"}')}}]);

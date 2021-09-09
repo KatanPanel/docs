@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkatan_docs=self.webpackChunkkatan_docs||[]).push([[805],{4558:function(a){a.exports=JSON.parse('{"name":"katan","permalink":"/br/docs/tags/katan","docs":[{"id":"overview","title":"Vis\xe3o Geral","description":"Bem-vindo(a) \xe0 documenta\xe7\xe3o do Katan.","permalink":"/br/docs/"}],"allTagsPath":"/br/docs/tags"}')}}]);
