@@ -79,8 +79,8 @@ module.exports = {
       anonymizeIP: true,
     },
     algolia: {
-      apiKey: 'YOUR_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      apiKey: "40588b1cafca23bba9a023a62a9f18be",
+      indexName: "katan",
       contextualSearch: true,
       searchParameters: {},
     }
