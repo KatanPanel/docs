@@ -1,4 +1,4 @@
-const communityUrl = "https://discord.gg/Tg7TTfT5ej"
+const communityUrl = "https://discord.gg/qTgBt6xjTT"
 const baseUrl = process.env.BASE_URL || '/';
 
 module.exports = {
