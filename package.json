@@ -12,15 +12,15 @@
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
-    "@docusaurus/core": "2.0.0-beta.5",
-    "@docusaurus/plugin-pwa": "2.0.0-beta.5",
-    "@docusaurus/preset-classic": "2.0.0-beta.5",
+    "@docusaurus/core": "2.4.1",
+    "@docusaurus/plugin-pwa": "2.4.1",
+    "@docusaurus/preset-classic": "2.4.1",
     "@docusaurus/theme-search-algolia": "^2.0.0-beta.6",
-    "@mdx-js/react": "^1.6.22",
-    "@saucelabs/theme-github-codeblock": "0.0.4",
-    "clsx": "^1.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@mdx-js/react": "^2.3.0",
+    "@saucelabs/theme-github-codeblock": "0.2.3",
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "browserslist": {
     "production": [
