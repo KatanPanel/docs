@@ -73,16 +73,6 @@ module.exports = {
     footer: {
       style: "dark",
       copyright: `Copyright © 2020-${new Date().getFullYear()} Katan. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
-    },
-    gtag: {
-      trackingID: "G-BWXYFCQYH2",
-      anonymizeIP: true,
-    },
-    algolia: {
-      apiKey: "40588b1cafca23bba9a023a62a9f18be",
-      indexName: "katan",
-      contextualSearch: true,
-      searchParameters: {},
     }
   },
   presets: [
@@ -103,6 +93,10 @@ module.exports = {
           changefreq: "weekly",
           priority: 0.5,
           trailingSlash: false,
+        },
+        gtag: {
+          trackingID: "G-BWXYFCQYH2",
+          anonymizeIP: true,
         },
       },
     ],
