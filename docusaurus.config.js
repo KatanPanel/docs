@@ -1,133 +1,139 @@
-const communityUrl = "https://discord.gg/qTgBt6xjTT"
-const baseUrl = process.env.BASE_URL || '/';
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
 
-module.exports = {
-  title: "Katan",
-  tagline: "An open source game server management panel.",
-  url: "https://katan.org",
-  baseUrl: "/",
-  onBrokenLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "KatanPanel",
-  projectName: "katan-website",
-  customFields: {
-    communityUrl
-  },
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
+
+  // Set the production url of your site here
+  url: 'https://your-docusaurus-test-site.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "br"],
-    localeConfigs: {
-      en: {
-        label: "English",
-      },
-      br: {
-        label: "Português",
-      },
-    },
+    defaultLocale: 'en',
+    locales: ['en'],
   },
-  themeConfig: {
-    prism: {
-      theme: require("prism-react-renderer/themes/nightOwlLight"),
-      darkTheme: require("prism-react-renderer/themes/palenight"),
-      additionalLanguages: ['powershell'],
-    },
-    colorMode: {
-      respectPrefersColorScheme: true
-    },
-    navbar: {
-      title: "Katan",
-      logo: {
-        alt: "Katan Logo",
-        src: "img/logo.png",
-      },
-      items: [
-        {
-          type: "doc",
-          docId: "overview",
-          label: "Documentation",
-          position: "left",
-        },
-        {
-          type: "doc",
-          docId: "reference/overview",
-          label: "Reference",
-          position: "left",
-        },
-        {
-          href: communityUrl,
-          label: "Community",
-          position: "left",
-        },
-        {
-          type: "localeDropdown",
-          position: "right",
-        },
-        {
-          href: "https://github.com/KatanPanel",
-          position: "right",
-          className: "header-github-link",
-          "aria-label": "GitHub 33",
-        },
-      ],
-    },
-    footer: {
-      style: "dark",
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Katan. Built with Docusaurus.<br/><small style="opacity: .54">An open source project, please consider donating to support this project.</small>`,
-    }
-  },
+
   presets: [
     [
-      "@docusaurus/preset-classic",
-      {
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          path: "docs",
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/KatanPanel/katan-website/edit/main/",
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
-        sitemap: {
-          changefreq: "weekly",
-          priority: 0.5,
-          trailingSlash: false,
-        },
-        gtag: {
-          trackingID: "G-BWXYFCQYH2",
-          anonymizeIP: true,
-        },
-      },
-    ],
-    [
-      "@docusaurus/plugin-pwa",
-      {
-        debug: true,
-        offlineModeActivationStrategies: [
-          "appInstalled",
-          "standalone",
-          "queryString",
-        ],
-        pwaHead: [
-          {
-            tagName: "link",
-            rel: "icon",
-            href: "img/logo.png",
-          },
-          {
-            tagName: "link",
-            rel: "manifest",
-            href: `${baseUrl}manifest.json`,
-          },
-          {
-            tagName: "meta",
-            name: "theme-color",
-            content: "#4b7bec",
-          },
-        ],
-      },
+      }),
     ],
   ],
-  themes: ["@saucelabs/theme-github-codeblock"]
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'My Site',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;
